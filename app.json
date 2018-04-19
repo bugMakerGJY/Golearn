@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index_1/index_1",
+    "pages/confirm_order/confirm_order",
+    "pages/review/review",
+    "pages/product/product",
+    "pages/login/login",
+    "pages/my_info/my_info",
+    "pages/class_detail/class_detail",
+    "pages/order/order",
+    "pages/category/category",
+    "pages/my/my",
+    "pages/my_info/name/name",
+    "pages/my_info/gender/gender"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1bbbd1",
+    "navigationBarTitleText": "去学",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "black",
+    "selectedColor": "#1bbbd1",
+    "borderStyle": "white",
+    "backgroundColor": "#f7f7f8",
+    "list": [
+      {
+        "pagePath": "pages/index_1/index_1",
+        "text": "首页",
+        "iconPath": "icon/首页.png",
+        "selectedIconPath": "icon/首页-选中.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "icon/类目.png",
+        "selectedIconPath": "icon/类目-选中.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "icon/我的.png",
+        "selectedIconPath": "icon/我的-选中.png"
+      }
+    ]
+  }
+}

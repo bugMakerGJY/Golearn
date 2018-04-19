@@ -1,0 +1,32 @@
+/* pages/category/category.wxss */
+
+page {
+  height: 100%;
+  background-color: #faf7fa;
+}
+.container-r{
+  position: absolute;
+  align-items:flex-start;
+  margin-left:300rpx;
+  width: 60%;
+  background-color:white;
+}
+.bar {
+  position: absolute;
+  /* margin-left: 0rpx; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20rpx 20rpx;
+  height: 100%;
+  width: 220rpx;
+  background-color: white;
+}
+
+.tag {
+  font-size: 32rpx;
+  /* font-weight:inherit; */
+  opacity:0.8;
+  padding: 30rpx 40rpx;
+}

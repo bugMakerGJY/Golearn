@@ -1,0 +1,13 @@
+/* pages/review/review.wxss */
+.header{
+  background-color: white;
+  padding: 20rpx 40rpx;
+  display: flex;
+  margin-bottom: 20rpx;
+}
+.tittleAndPrice{
+  display: flex;
+  flex-direction: column;
+  margin-left: 60rpx;
+  justify-content: space-between;
+}

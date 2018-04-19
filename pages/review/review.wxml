@@ -1,0 +1,20 @@
+<!--pages/review/review.wxml-->
+<import src="../../components/rater/rater.wxml" />
+<view class='header'>
+  <image src="../../icon/1.jpg" style="height:150rpx;width:150rpx;"></image>
+  <view class="tittleAndPrice">
+    <text>初中英语提分班</text>
+    <text>400元</text>
+  </view>
+</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell">
+    <view class="weui-cell__bd" style='font-size:30rpx;'>评价</view>
+    <view class="weui-cell__ft">
+      <template is="rater" data="{{ ...$wux.rater.star }}" />
+    </view>
+  </view>
+  <view class='line'></view>
+  <textarea style='height:200rpx; padding:20rpx 40rpx;' placeholder="写写你的感受吧" placeholder-style="font-size:30rpx;opacity:0.8;"  bindinput='getReview'></textarea>
+</view>
+<button style="margin:150rpx 40rpx;background-color: #1bbbd1;opacity: {{opacity}};" type="primary" disabled='{{disable}}' bindtap="login">提交</button>

@@ -1,0 +1,36 @@
+<!--pages/product/product.wxml-->
+<import src="../../components/filterbar/filterbar.wxml" />
+
+
+<view class="page">
+  <view class='header'>
+    <!-- logo -->
+    <text style='color:white;font-size:60rpx;font-weight:bold'>Go Learn</text>
+
+    <!-- 搜索框 -->
+    <view class="input-outer_2">
+      <image src='../../icon/search.png' mode="aspectFit" style='padding-left:40rpx;padding-right:40rpx;height:40rpx;width:40rpx;'></image>
+      <input class="input-inside" placeholder='搜索课程名' placeholder-style='font-size:28rpx; opacity:0.7;' bindinput='getInput'></input>
+    </view>
+  </view>
+  <view class="page__bd">
+    <template is="filterbar" data="{{ ...$wux.filterbar }}" />
+    <view class="weui-panel weui-panel_access">
+      <view class="weui-panel__bd">
+        <block wx:for="{{info}}">
+          <navigator url="../class_detail/class_detail" class='class_info' hover-class='class_info_hover'>
+            <image class="class_pic" src='../../icon/1.jpg' mode="aspectFit"></image>
+            <view class='enrollment'>已报名{{item}}人</view>
+            <text class="tittle">初中英语提分班</text>
+            <text class='price'>￥ 500</text>
+            <text class='discount'>预约金50抵扣100</text>
+            <view class='center-name'>学大教育中心</view>
+            <text class='location'>邗江区 3.0km</text>
+          </navigator>
+          <!-- 分割线 -->
+          <view class='line' style='width:90%'></view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>

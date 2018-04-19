@@ -1,0 +1,117 @@
+/* pages/confirm_order/confirm_order.wxss */
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  padding-top: 40rpx;
+  padding-bottom: 20rpx;
+}
+
+.class_info {
+  margin-top: 40rpx;
+  width: 100%;
+  height: 300rpx;
+  background-color: white;
+}
+
+.class_pic {
+  /* padding: 0 20rpx; */
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  margin-left: 40rpx;
+  /* margin-top: 20rpx; */
+}
+
+.tittle {
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 50rpx;
+  font-size: 35rpx;
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+.price {
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 200rpx;
+  font-size: 34rpx;
+  font-weight: bold;
+  color: #f56e66;
+  opacity: 0.8;
+}
+
+.discount {
+  position: absolute;
+  margin-left: 70%;
+  margin-top: 128rpx;
+  font-size: 25rpx;
+  /* font-weight:bold; */
+  color: #f56e66;
+  opacity: 0.8;
+}
+
+.center-name {
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 220rpx;
+  height: 35rpx;
+  font-size: 25rpx;
+  color: #878687;
+  padding: 0 20rpx;
+  background-color: rgba(255, 163, 163, 0.2);
+}
+
+.location {
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 140rpx;
+  height: 35rpx;
+  font-size: 20rpx;
+  color: #878687;
+}
+
+.bar {
+  position: absolute;
+  height: 15rpx;
+  z-index: 1;
+  width: 100%;
+  background-color: white;
+}
+
+.container4 {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  height: 100rpx;
+  bottom: 0rpx;
+}
+
+.total {
+  margin-left: 40rpx;
+  bottom: 10px;
+  position: fixed;
+}
+
+.confirm {
+  width: 300rpx;
+  color: white;
+  height: 100rpx;
+  margin-right: 0rpx;
+  background-color: #1bbbd1;
+  border-radius: 0px;
+  line-height: 3;
+}
+
+.confirm-hover {
+  width: 300rpx;
+  color: white;
+  height: 100rpx;
+  margin-right: 0rpx;
+  background-color: #17A3B7;
+  border-radius: 0px;
+  line-height: 3;
+}

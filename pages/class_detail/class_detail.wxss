@@ -1,0 +1,140 @@
+/* pages/class_detail/class_detail.wxss */
+
+page {
+  height: 100%;
+  background-color: #faf7fa;
+}
+
+.header {
+  width: 100%;
+  background-color: white;
+}
+
+.enrollment {
+  /* height: 20px; */
+  position: absolute;
+  z-index: 1;
+  font-size: 30rpx;
+  color: white;
+  padding: 0 40rpx;
+  background-color: rgba(16, 16, 16, 0.6);
+}
+
+.tittle {
+  position: absolute;
+  margin: 10rpx 40rpx;
+  font-weight: bold;
+  font-size: 40rpx;
+  opacity: 0.8;
+}
+
+.price {
+  position: absolute;
+  margin-top: 80rpx;
+  margin-left: 40rpx;
+  font-size: 60rpx;
+  color: #00bcd4;
+}
+
+.orgin_price {
+  position: absolute;
+  margin-top: 110rpx;
+  margin-left: 40%;
+  font-size: 30rpx;
+  text-decoration: line-through;
+  opacity: 0.3;
+}
+
+.submit {
+  position: absolute;
+  background-color: #fdbf2d;
+  color: white;
+  text-align: center;
+  font-size: 30rpx;
+  padding: 15rpx 5rpx;
+  width: 200rpx;
+  margin-top: 80rpx;
+  margin-left: 68%;
+  border-radius: 3px;
+}
+
+.submit-hover-class {
+  position: absolute;
+  background-color: #cc972f;
+  color: white;
+  text-align: center;
+  font-size: 30rpx;
+  padding: 15rpx 5rpx;
+  width: 200rpx;
+  margin-top: 80rpx;
+  margin-left: 68%;
+  border-radius: 3px;
+}
+
+.sub_header {
+  display: flex;
+  align-items: center;
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+  background-color: white;
+  padding: 15rpx 0rpx;
+}
+
+.yellow_bar {
+  width: 6px;
+  height: 50rpx;
+  background-color: #fdbf2d;
+}
+
+.describe {
+  background-color: white;
+  font-size: 25rpx;
+  padding: 20rpx 40rpx;
+  text-indent: 50rpx;
+  text-align: left;
+}
+
+/* 
+crtl+v */
+
+.userinfo-avatar {
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 50%;
+}
+
+.nameAndStars {
+  display: flex;
+  flex-direction: column;
+  margin: 20rpx 20rpx;
+}
+
+.comment {
+  /* padding-left: 40rpx; */
+  padding: 20rpx 40rpx;
+  font-size: 30rpx;
+  background-color: white;
+  display: flex;
+  /* align-items: center; */
+}
+
+.comment_text {
+  height: 100rpx;
+  background-color: white;
+  /* padding-top: 10rpx; */
+  font-size: 30rpx;
+  padding-left: 150rpx;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.stars {
+  display: flex;
+}
+
+.comment_body {
+  flex: 1;
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden;
+}

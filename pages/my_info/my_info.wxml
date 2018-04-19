@@ -1,0 +1,28 @@
+<!--pages/my_info/my_info.wxml-->
+<import src="../../components/toast/toast.wxml" />
+
+<template is="toast" data="{{ ...$wux.toast }}" />
+
+<view class="weui-cells weui-cells_after-title" style='margin-bottom:30rpx;'>
+  <view url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap='chooseImageTap'>
+    <view class="weui-cell__bd" style='font-size:30rpx;opacity:0.8;font-weight:bold;'>头像</view>
+    <view class=" weui-cell__ft_in-access" style='font-size:25rpx;'>
+      <image src="{{avatar}}" style="height:100rpx;width:100rpx;"></image>
+    </view>
+  </view>
+  <view class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="weui-cell__bd" style='font-size:30rpx;opacity:0.8;font-weight:bold;'>绑定手机</view>
+    <view class="weui-cell__ft" style='font-size:25rpx;'>{{appUserInfo.user.name[0]}}{{appUserInfo.user.name[1]}}{{appUserInfo.user.name[2]}}****{{appUserInfo.user.name[7]}}{{appUserInfo.user.name[8]}}{{appUserInfo.user.name[9]}}{{appUserInfo.user.name[10]}}</view>
+  </view>
+  <navigator url="./name/name" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="weui-cell__bd" style='font-size:30rpx;opacity:0.8;font-weight:bold;'>昵称</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access" style='font-size:25rpx;'>{{appUserInfo.user.nickname}}</view>
+  </navigator>
+  <navigator url="./gender/gender" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="weui-cell__bd" style='font-size:30rpx;opacity:0.8;font-weight:bold;'>性别</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access" style='font-size:25rpx;' wx:if="{{appUserInfo.user.gender==1}}">男</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access" style='font-size:25rpx;' wx:else>女</view>
+  </navigator>
+</view>
+
+<view></view>

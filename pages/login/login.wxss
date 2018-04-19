@@ -1,0 +1,40 @@
+/* pages/login/login.wxss */
+
+page {
+  height: 100%;
+  background-color: white;
+}
+
+.form-common {
+  /* margin-top: 50rpx; */
+  padding: 0 60rpx;
+}
+
+.formc-cnt {
+  padding: 16rpx 0;
+  display: flex;
+  border-bottom: 0.5px solid #ddd;
+  margin: 16rpx 0;
+}
+
+.formc-cnt text {
+  text-align: left;
+}
+
+.formc-cnt input {
+  flex: 1;
+  display: block;
+}
+
+.welcome {
+  /* position: absolute; */
+  top: 400rpx;
+  padding: 0rpx 60rpx;
+  font-size: 50rpx;
+  font-weight: bold;
+}
+
+.p-class {
+  font-size: 30rpx;
+  opacity: 0.5;
+}

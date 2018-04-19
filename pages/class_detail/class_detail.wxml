@@ -1,0 +1,71 @@
+<!--pages/class_detail/class_detail.wxml-->
+<view class="header">
+  <view class="enrollment">20人报名</view>
+  <image src='../../icon/1.jpg' style='width:100%; height:400rpx;'></image>
+</view>
+<view class="tittle_price" style='background-color:white; height:200rpx;'>
+  <view class="tittle"> 初中英语提分精品班</view>
+  <view class="price">￥400.00</view>
+  <view class="orgin_price">原价￥500.00</view>
+  <navigator url="../confirm_order/confirm_order" class="submit" hover-class='submit-hover-class'>立即体验</navigator>
+</view>
+<view class="sub_header">
+  <view class="yellow_bar"></view>
+  <text style='margin-left:20rpx;'>课程信息</text>
+</view>
+<view class="weui-cells weui-cells_after-title" style='margin-bottom:30rpx;'>
+  <view class="weui-cell">
+    <view class="weui-cell__hd">
+      <image src="../../icon/my_fill.png" style="margin-right: 5px;vertical-align: middle;width:22px; height: 22px;"></image>
+    </view>
+    <view style='font-size:25rpx;opacity:0.5; font-weight: bold;'>机构名</view>
+    <text style='font-size:25rpx;opacity:0.9;margin-left:40rpx;margin-right:40rpx'>龙文教育</text>
+    <image src="../../icon/phone.png" style="margin-right: 5px;vertical-align: middle;width:22px; height: 22px;text-al"></image>
+  </view>
+  <view class="weui-cell">
+    <view class="weui-cell__hd">
+      <image src="../../icon/location_fill.png" style="margin-right: 5px;vertical-align: middle;width:22px; height: 22px;"></image>
+    </view>
+    <view style='font-size:25rpx;opacity:0.5; font-weight: bold;'>地点</view>
+    <text style='font-size:25rpx;opacity:0.9;margin-left:65rpx;'>邗江区华扬西路扬子津西校区</text>
+  </view>
+  <view class="weui-cell">
+    <view class="weui-cell__hd">
+      <image src="../../icon/date.png" style="margin-right: 5px;vertical-align: middle;width:22px; height: 22px;"></image>
+    </view>
+    <view style='font-size:25rpx;opacity:0.5; font-weight: bold;'>开课日期</view>
+    <text style='font-size:25rpx;opacity:0.9;margin-left:20rpx;'>2017-12-09 ~ 2018-1-09 每周六 9：00am</text>
+  </view>
+</view>
+<view class="sub_header">
+  <view class="yellow_bar"></view>
+  <text style='margin-left:20rpx;'>课程概述</text>
+</view>
+<view class='describe'> 本项目是建立在同学们掌握了前端的各项技术的基础之上，所以会集中精力讲解前端部分是如何完成的。 后台部分需要J2EE的知识和技能，不在本项目的学习范畴之内。
+</view>
+<view class="sub_header">
+  <view class="yellow_bar"></view>
+  <text style='margin-left:20rpx;'>评价</text>
+</view>
+
+
+
+<scroll-view class="comment_body">
+  <view class="comment" wx:if="{{comment.length==0}}">
+    <text>暂时没有人评价</text>
+  </view>
+  <view wx:for="{{comment}}">
+    <view class="comment">
+      <image class="userinfo-avatar" src="{{item.headImg}}"></image>
+      <view class="nameAndStars">
+        <text style='font-size:28rpx;opacity:0.5; font-weight: bold;'>{{item.name}}</text>
+        <view class="stars">
+          <image style="width:30rpx; height:30rpx;" src="../../icon/stars.png" wx:key="{{item.stars}}"></image>
+        </view>
+      </view>
+      <text style="padding-top:20rpx;margin-left:200rpx;font-size:25rpx;opacity:0.8;">{{item.createdate}}</text>
+    </view>
+    <view class="comment_text">{{item.content}}</view>
+  </view>
+  <view style='height:20rpx;'></view>
+</scroll-view>

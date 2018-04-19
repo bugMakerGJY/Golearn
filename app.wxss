@@ -1,0 +1,81 @@
+/**app.wxss**/
+@import 'components/wux.wxss';
+@import 'assets/styles/weui.wxss';
+@import 'assets/styles/skyvow.wxss';
+.container-c {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50rpx 0;
+  box-sizing: border-box;
+}
+
+.container-r {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50rpx 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #1bbbd1;
+  width: 100%;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background: #cdcdcd;
+  /* opacity:0.5; *//* margin: {{如果需要的话设置，线距离两端的距离， 如： 0 20rpx}}; */
+}
+
+.font-main {
+  font-size: 35rpx;
+  opacity: 0.7;
+}
+
+.input-outer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  height: 60rpx;
+  border: 1px;
+  border-color: #878687;
+  border-style: solid;
+  border-radius: 25px;
+  /* margin:0 40rpx; *//* background-color: #F56E66; */
+}
+
+.split_line {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20rpx 0;
+}
+
+.btn {
+  margin-top: 48rpx;
+  display: block;
+  background-color: #4ea3e7;
+  height: 3.0em;
+  padding: 0;
+  line-height: 3.0;
+  border-radius: 5rpx;
+  font-size: 32rpx;
+  color: white;
+}
+
+.formc-cnt {
+  padding: 16rpx 0;
+  display: flex;
+  border-bottom: 0.5px solid #ddd;
+  margin: 16rpx 0;
+}

@@ -1,0 +1,50 @@
+<!--pages/order/order.wxml-->
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-tab">
+      <view class="weui-navbar">
+        <block wx:for-items="{{tabs}}" wx:key="{{index}}">
+          <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+            <view class="weui-navbar__title">{{item}}</view>
+          </view>
+        </block>
+        <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+      </view>
+      <view class="weui-tab__panel">
+        <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+
+          <view class="weui-cell weui-cell_access" style='margin-top:30rpx; background-color:white;'>
+            <view class="weui-cell__bd" style='font-size:25rpx;opacity:0.8;'>2017-12-07 15：07</view>
+            <view class="weui-cell__ft" style='font-size:25rpx; color:#F56E66;'>待使用</view>
+          </view>
+          <view class='class_info'>
+
+            <view class='line'></view>
+
+            <image class="class_pic" src='../../icon/1.jpg' mode="aspectFit"></image>
+            <image class="yu" src='../../icon/yu.png' mode="aspectFit"></image>
+            <text class="tittle">初中英语提分班</text>
+            <text class='price'>￥50.00</text>
+            <text class='time'>上课时间：2018-01-01 18：00</text>
+            <text class='location'>上课地点：邗江区华扬西路扬子津校区</text>
+          </view>
+          <!-- 分割线 -->
+          <view class='line'></view>
+          <view class="total_price">
+            <text style='padding:0 15px;font-size:30rpx;'>实际付款：￥40.00</text>
+          </view>
+          <!-- <view class='buttons'>
+            <view class="button-1" hover-class="button-1-hover-class">去付款</view>
+          </view> -->
+
+          <view class='buttons'>
+            <view class="button-2" hover-class="button-2-hover-class">不满意并退款</view>
+            <navigator url="../review/review" class="button-1" hover-class="button-1-hover-class">满意并评价</navigator>
+          </view>
+        </view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 1}}">选项二的内容</view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 2}}">选项三的内容</view>
+      </view>
+    </view>
+  </view>
+</view>
